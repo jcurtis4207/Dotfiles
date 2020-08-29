@@ -19,3 +19,4 @@ alias autoremove="sudo apt-get autoremove"
 alias shutdown="shutdown -h now"
 
 alias config="/usr/bin/git --git-dir=/home/jacob/Documents/Dotfiles --work-tree=/home/jacob/Documents/Dotfiles"
+# add some shit
