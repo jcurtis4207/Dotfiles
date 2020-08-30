@@ -1,4 +1,6 @@
 # My Bash Aliases
+alias ssh="TERM=xterm-256color ssh"
+
 alias ..="cd .."
 alias ...="cd ../.."
 
@@ -18,4 +20,4 @@ alias autoremove="sudo apt-get autoremove"
 
 alias shutdown="shutdown -h now"
 
-alias config="/usr/bin/git --git-dir=/home/jacob/Documents/Dotfiles --work-tree=/home/jacob/Documents/Dotfiles"
+alias config="/usr/bin/git --git-dir=/home/jacob/Documents/Dotfiles --work-tree=/home/jacob"
