@@ -108,9 +108,10 @@ ForegroundPositive=83,83,83
 ForegroundVisited=70,135,214
 
 [General]
+BrowserApplication=firefox.desktop
 ColorScheme=Silicon
 Name=Breeze Dark
-TerminalApplication=ala
+TerminalApplication=Alacritty
 dbfile=/home/jacob/.mozilla/firefox/9mk850dt.default/places.sqlite
 shadeSortColumn=true
 widgetStyle=Breeze

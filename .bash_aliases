@@ -1,5 +1,5 @@
 # My Bash Aliases
-alias ssh="TERM=xterm-256color ssh"
+#alias ssh="TERM=xterm-256color ssh" # ssh into machine without alacritty -> use xterm instead
 
 alias ..="cd .."
 alias ...="cd ../.."
@@ -20,4 +20,4 @@ alias autoremove="sudo apt-get autoremove"
 
 alias shutdown="shutdown -h now"
 
-alias config="/usr/bin/git --git-dir=/home/jacob/Documents/Dotfiles --work-tree=/home/jacob"
+alias dotfiles="/usr/bin/git --git-dir=/home/jacob/Documents/Dotfiles --work-tree=/home/jacob"

@@ -15,7 +15,7 @@ Show Tab Bar=true
 Startup Session=manual
 
 [KFileDialog Settings]
-Recent Files[$e]=links.txt,file:$HOME/Desktop/links.txt
+Recent Files[$e]=links.txt,file:$HOME/Downloads/youtube-dl/0_youtube.sh,file:$HOME/Downloads/youtube-dl/0_pornhub.sh,file:$HOME/Downloads/gallery-dl/insta.sh
 Recent URLs[$e]=file:$HOME/Downloads/youtube-dl/
 detailViewIconSize=0
 
