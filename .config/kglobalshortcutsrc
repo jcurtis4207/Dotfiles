@@ -34,9 +34,8 @@ _k_friendly_name=KDE Daemon
 display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
-_k_friendly_name=System Settings
+_k_friendly_name=KDE Daemon
 {a61d7265-b99c-42e9-bf38-e0055f6933b4}=,none,Launch Konsole
-{a958520e-663f-4256-a51b-ea58b5d0e935}=none,none,New Action
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
 
 [kmix]

@@ -15,7 +15,7 @@ Show Tab Bar=true
 Startup Session=manual
 
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/Desktop/multipleStars,file:$HOME/Downloads/youtube-dl/0_youtube.sh,file:$HOME/Downloads/youtube-dl/0_pornhub.sh,file:$HOME/Downloads/gallery-dl/insta.sh
+Recent Files[$e]=file:$HOME/Downloads/youtube-dl/0_youtube.sh,file:$HOME/Desktop/overview.json,file:$HOME/Desktop/morgoth.json,file:$HOME/Downloads/youtube-dl/0_pornhub.sh,file:$HOME/Downloads/gallery-dl/insta.sh
 Recent URLs[$e]=file:///mnt/ztuff/OLD/Karlee Grey/
 detailViewIconSize=0
 
@@ -108,6 +108,9 @@ Word Completion=false
 Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
+[KTextEditor::Search]
+Search History=inputs.exec
+
 [Konsole]
 AutoSyncronize=true
 RemoveExtension=false
@@ -116,9 +119,9 @@ SetEditor=false
 
 [MainWindow]
 Height 1080=1021
-State=AAAA/wAAAAD9AAAAAAAAB34AAAPkAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAAA74AAAPoAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Width 1920=1918
+Width 1920=958
 
 [UiSettings]
 ColorScheme=Breeze Dark

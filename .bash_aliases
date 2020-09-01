@@ -11,7 +11,7 @@ alias la="ls -hNA --color=auto" # human-readable, no quotes, list all but '.' an
 alias ps="ps aux" # all user processes, show user/owner, all processes not run by terminal
 
 alias update="sudo apt-get update"
-alias upgrade="sudo apt-get dist-upgrade"
+alias upgrade="sudo apt-get dist-upgrade -y"
 alias install="sudo apt-get install"
 alias remove="sudo apt-get remove --purge"
 alias autoremove="sudo apt-get autoremove"
