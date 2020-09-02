@@ -19,3 +19,6 @@ set laststatus=2
 let g:lightline = {
 	\ 'colorscheme': 'wombat',
 	\ }
+
+" Reamp ESC to ii
+:imap ii <Esc>
