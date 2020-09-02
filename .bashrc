@@ -144,4 +144,19 @@ function extract()
   else
     echo "'$1' is not a valid file"
   fi
+
+  # if no errors, delete input archives
+  if [ $? -eq 0 ]
+  then
+      # if multiple parts, delete all parts
+      if [[ $1 == *part[0-9]* ]]
+      then
+          target="${1/part[0-9]*/part}"
+          rm -i "$target"*
+      else
+          rm -i "$1"
+      fi
+  else
+          echo "ERROR"
+  fi
 }
