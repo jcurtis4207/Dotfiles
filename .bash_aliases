@@ -12,13 +12,20 @@ alias ps="ps aux" # all user processes, show user/owner, all processes not run b
 alias vi="vim"
 alias mkdir="mkdir -p" # create parents as needed
 
+alias shutdown="sudo shutdown -h now"
+
+# Debian Package Management
 alias update="sudo apt-get update"
 alias upgrade="sudo apt-get dist-upgrade -y"
 alias install="sudo apt-get install -y"
 alias remove="sudo apt-get remove --purge -y"
 alias autoremove="sudo apt-get autoremove -y"
 
-alias shutdown="sudo shutdown -h now"
+# Arch Package Management
+#alias update="sudo pacman -Syu"
+#alias install="sudo pacman -S"
+#alias remove="sudo pacman -Rsn"
+#alias autoremove="sudo pacman -Qtd"
 
 # alias for git bare repository
 alias dotfiles="/usr/bin/git --git-dir=/home/jacob/Documents/Dotfiles --work-tree=/home/jacob"
