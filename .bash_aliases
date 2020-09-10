@@ -29,3 +29,6 @@ alias autoremove="sudo apt-get autoremove -y"
 
 # alias for git bare repository
 alias dotfiles="/usr/bin/git --git-dir=/home/jacob/Documents/Dotfiles --work-tree=/home/jacob"
+
+# disposable alias for installing vundle
+#alias zzzzzzz="git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
