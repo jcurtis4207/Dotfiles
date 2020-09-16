@@ -1,0 +1,59 @@
+{
+    "extractor":
+    {
+        "base-directory": "/home/jacob/Downloads/gallery-dl/",
+        "postprocessors": null,
+
+        "instagram":
+        {
+            "cookies":{
+                "sessionid":"1478676314%3AWq0J2rcBbYx59R%3A7"
+            },
+            "highlights": true,
+            "videos": true
+        }
+    },
+
+    "downloader":
+    {
+        "filesize-min": null,
+        "filesize-max": null,
+        "part": true,
+        "part-directory": null,
+
+        "http":
+        {
+            "adjust-extensions": true,
+            "mtime": true,
+            "rate": null,
+            "retries": 4,
+            "timeout": 30.0,
+            "verify": true
+        },
+
+        "ytdl":
+        {
+            "format": null,
+            "forward-cookies": false,
+            "mtime": true,
+            "outtmpl": null,
+            "rate": null,
+            "retries": 4,
+            "timeout": 30.0,
+            "verify": true
+        }
+    },
+
+    "output":
+    {
+        "mode": "auto",
+        "progress": true,
+        "shorten": true,
+        "log": "[{name}][{levelname}] {message}",
+        "logfile": null,
+        "unsupportedfile": null
+    },
+
+    "netrc": false
+}
+
