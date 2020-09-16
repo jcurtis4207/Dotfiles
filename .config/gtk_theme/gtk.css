@@ -7,6 +7,9 @@
  * header #202020
  * menu #242424
  * accent #AAAAAA
+ * selection color rgba(180, 180, 180,
+ * selected:hover  rgba(169, 169, 169,
+ * action:checked  rgba(163, 163, 163,
  *
  */
 
@@ -127,7 +130,7 @@ radio:active, row.activatable:active {
 }
 
 .view:selected:hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.08);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.08);
 }
 
 .view:disabled {
@@ -161,7 +164,7 @@ treeview.view rubberband,
 .content-view .rubberband,
 XfdesktopIconView.view .rubberband {
   border: 1px solid #AAAAAA;
-  background-color: rgba(138, 180, 248, 0.3);
+  background-color: rgba(180, 180, 180, 0.3);
 }
 
 flowbox flowboxchild {
@@ -572,18 +575,18 @@ button:checked {
 
 button:checked:drop(active),
 button:checked:hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.08), 0 2px 2.4px -1px rgba(0, 0, 0, 0.2), 0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.08), 0 2px 2.4px -1px rgba(0, 0, 0, 0.2), 0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
 }
 
 
 button:checked:focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12), 0 2px 2.4px -1px rgba(0, 0, 0, 0.2), 0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12), 0 2px 2.4px -1px rgba(0, 0, 0, 0.2), 0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
 }
 
 
 button:checked:active {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12), 0 5px 3px -3px rgba(0, 0, 0, 0.2), 0 8px 6px 1px rgba(0, 0, 0, 0.14), 0 3px 8.4px 2px rgba(0, 0, 0, 0.12);
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12), 0 5px 3px -3px rgba(0, 0, 0, 0.2), 0 8px 6px 1px rgba(0, 0, 0, 0.14), 0 3px 8.4px 2px rgba(0, 0, 0, 0.12);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 
@@ -814,7 +817,7 @@ button.suggested-action:disabled {
 }
 
 button.suggested-action:checked {
-  background-color: rgba(125, 163, 224, 0.9844);
+  background-color: rgba(163, 163, 163, 0.9844);
 }
 
 button.suggested-action.flat {
@@ -824,15 +827,15 @@ button.suggested-action.flat {
 }
 
 button.suggested-action.flat:drop(active), button.suggested-action.flat:hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 button.suggested-action.flat:focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 button.suggested-action.flat:active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 button.suggested-action.flat:disabled {
@@ -842,7 +845,7 @@ button.suggested-action.flat:disabled {
 }
 
 button.suggested-action.flat:checked {
-  background-color: rgba(138, 180, 248, 0.12);
+  background-color: rgba(180, 180, 180, 0.12);
 }
 
 button.destructive-action {
@@ -1054,15 +1057,15 @@ button.link:link {
 }
 
 button.link:link:drop(active), button.link:link:hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 button.link:link:focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 button.link:link:active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 button.link:visited {
@@ -1710,7 +1713,7 @@ treeview.view {
 
 treeview.view:selected {
   background-color: #101010;
-  background-image: image(rgba(138, 180, 248, 0.24));
+  background-image: image(rgba(180, 180, 180, 0.24));
 }
 
 treeview.view:hover, treeview.view:selected {
@@ -2079,7 +2082,7 @@ notebook.frame > header {
 }
 
 notebook:focus tab:checked {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 notebook > header {
@@ -2501,7 +2504,7 @@ switch {
 }
 
 switch:checked {
-  background-color: rgba(138, 180, 248, 0.5);
+  background-color: rgba(180, 180, 180, 0.5);
 }
 
 switch:disabled {
@@ -2622,19 +2625,19 @@ radio:checked:drop(active),
 radio:checked:hover,
 radio:indeterminate:drop(active),
 radio:indeterminate:hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 check:checked:focus, check:indeterminate:focus,
 radio:checked:focus,
 radio:indeterminate:focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 check:checked:active, check:indeterminate:active,
 radio:checked:active,
 radio:indeterminate:active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 check:disabled,
@@ -3158,7 +3161,7 @@ scrolledwindow viewport.frame {
 }
 
 overshoot.top {
-  background-image: -gtk-gradient(radial, center top, 0, center top, 0.75, to(rgba(138, 180, 248, 0.24)), to(transparent));
+  background-image: -gtk-gradient(radial, center top, 0, center top, 0.75, to(rgba(180, 180, 180, 0.24)), to(transparent));
   background-repeat: no-repeat;
   background-position: center top;
   background-color: transparent;
@@ -3167,7 +3170,7 @@ overshoot.top {
 }
 
 overshoot.bottom {
-  background-image: -gtk-gradient(radial, center bottom, 0, center bottom, 0.75, to(rgba(138, 180, 248, 0.24)), to(transparent));
+  background-image: -gtk-gradient(radial, center bottom, 0, center bottom, 0.75, to(rgba(180, 180, 180, 0.24)), to(transparent));
   background-repeat: no-repeat;
   background-position: center bottom;
   background-color: transparent;
@@ -3176,7 +3179,7 @@ overshoot.bottom {
 }
 
 overshoot.left {
-  background-image: -gtk-gradient(radial, left center, 0, left center, 0.75, to(rgba(138, 180, 248, 0.24)), to(transparent));
+  background-image: -gtk-gradient(radial, left center, 0, left center, 0.75, to(rgba(180, 180, 180, 0.24)), to(transparent));
   background-repeat: no-repeat;
   background-position: left center;
   background-color: transparent;
@@ -3185,7 +3188,7 @@ overshoot.left {
 }
 
 overshoot.right {
-  background-image: -gtk-gradient(radial, right center, 0, right center, 0.75, to(rgba(138, 180, 248, 0.24)), to(transparent));
+  background-image: -gtk-gradient(radial, right center, 0, right center, 0.75, to(rgba(180, 180, 180, 0.24)), to(transparent));
   background-repeat: no-repeat;
   background-position: right center;
   background-color: transparent;
@@ -3299,15 +3302,15 @@ row:selected {
 }
 
 row:selected:drop(active), row:selected:hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 row:selected:focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 row:selected:active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 /*********************
@@ -3323,15 +3326,15 @@ row:selected:active {
 }
 
 .app-notification button.text-button:not(:disabled):drop(active), .app-notification button.text-button:not(:disabled):hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 .app-notification button.text-button:not(:disabled):focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 .app-notification button.text-button:not(:disabled):active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 .app-notification.frame,
@@ -3455,15 +3458,15 @@ messagedialog .dialog-action-box button:not(:last-child) {
 }
 
 .dialog-action-box button:not(:disabled):drop(active), .dialog-action-box button:not(:disabled):hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 .dialog-action-box button:not(:disabled):focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 .dialog-action-box button:not(:disabled):active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 .dialog-action-box button.suggested-action:not(:disabled) {
@@ -3541,20 +3544,20 @@ stacksidebar.sidebar row {
 stacksidebar.sidebar row:selected {
   font-weight: 500;
   color: #AAAAAA;
-  background-color: rgba(138, 180, 248, 0.16);
+  background-color: rgba(180, 180, 180, 0.16);
   box-shadow: inset 0 0 0 9999px transparent;
 }
 
 stacksidebar.sidebar row:selected:drop(active), stacksidebar.sidebar row:selected:hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 stacksidebar.sidebar row:selected:focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 stacksidebar.sidebar row:selected:active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 stacksidebar.sidebar row + row {
@@ -3604,20 +3607,20 @@ placessidebar.sidebar row > revealer {
 placessidebar.sidebar row:selected {
   font-weight: 500;
   color: #AAAAAA;
-  background-color: rgba(138, 180, 248, 0.16);
+  background-color: rgba(180, 180, 180, 0.16);
   box-shadow: inset 0 0 0 9999px transparent;
 }
 
 placessidebar.sidebar row:selected:drop(active), placessidebar.sidebar row:selected:hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 placessidebar.sidebar row:selected:focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 placessidebar.sidebar row:selected:active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 placessidebar.sidebar row:selected image.sidebar-icon {
@@ -3746,15 +3749,15 @@ infobar.info button.text-button:not(:disabled), infobar.question button.text-but
 }
 
 infobar.info button.text-button:not(:disabled):drop(active), infobar.info button.text-button:not(:disabled):hover, infobar.question button.text-button:not(:disabled):drop(active), infobar.question button.text-button:not(:disabled):hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 infobar.info button.text-button:not(:disabled):focus, infobar.question button.text-button:not(:disabled):focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 infobar.info button.text-button:not(:disabled):active, infobar.question button.text-button:not(:disabled):active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 infobar.warning {
@@ -4013,7 +4016,7 @@ button.titlebutton {
 .view selection, .view:selected, flowbox flowboxchild:selected, label selection, spinbutton:not(.vertical) selection,
 entry selection, modelbutton.flat:selected,
 .menuitem.button.flat:selected, row:selected, calendar:selected, .nautilus-window flowboxchild:selected .icon-item-background, box.vertical > widget > widget:selected, .budgie-popover.budgie-menu button.flat:not(.image-button):checked, calendar.raven-calendar:selected, XfdesktopIconView.view:active, .nemo-window .nemo-window-pane widget.entry:selected {
-  background-color: rgba(138, 180, 248, 0.24);
+  background-color: rgba(180, 180, 180, 0.24);
 }
 
 .monospace {
@@ -4099,20 +4102,20 @@ button.emoji-section {
 
 button.emoji-section:checked {
   color: #AAAAAA;
-  background-color: rgba(138, 180, 248, 0.16);
+  background-color: rgba(180, 180, 180, 0.16);
   box-shadow: inset 0 0 0 9999px transparent;
 }
 
 button.emoji-section:checked:drop(active), button.emoji-section:checked:hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 button.emoji-section:checked:focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 button.emoji-section:checked:active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 button.emoji-section:not(:last-child) {
@@ -4827,7 +4830,7 @@ ideeditorutilities > dzldockpaned > box > stackswitcher button {
 }
 
 ideeditorutilities > dzldockpaned > box > stackswitcher button:active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.7) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.7) 10%, transparent 0%);
 }
 
 ideeditorutilities > dzldockpaned > box > stackswitcher button:checked {
@@ -4938,7 +4941,7 @@ button.photos-filter-preview {
 }
 
 button.photos-filter-preview:checked {
-  background-color: rgba(138, 180, 248, 0.24);
+  background-color: rgba(180, 180, 180, 0.24);
   color: rgba(255, 255, 255, 0.87);
 }
 
@@ -4981,7 +4984,7 @@ overlay grid.horizontal > revealer > scrolledwindow.frame:dir(rtl) {
 }
 
 .side-panel .view:selected:hover {
-  background-image: image(rgba(129, 169, 232, 0.9896));
+  background-image: image(rgba(169, 169, 169, 0.9896));
 }
 
 .songs-list:hover {
@@ -5123,7 +5126,7 @@ evview.content-view.view:selected {
  * Polari *
  **********/
 .polari-room-list row:selected {
-  background-color: rgba(138, 180, 248, 0.5);
+  background-color: rgba(180, 180, 180, 0.5);
 }
 
 /***********
@@ -5817,15 +5820,15 @@ na-tray-applet {
 }
 
 .brisk-menu .categories-list button:checked:drop(active), .brisk-menu .categories-list button:checked:hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 .brisk-menu .categories-list button:checked:focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 .brisk-menu .categories-list button:checked:active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 .brisk-menu .session-button {
@@ -5905,7 +5908,7 @@ na-tray-applet {
 
 .caja-desktop.view .entry:selected,
 .caja-navigation-window .view .entry:selected {
-  background-color: rgba(138, 180, 248, 0.24);
+  background-color: rgba(180, 180, 180, 0.24);
 }
 
 .caja-desktop.view .entry {
@@ -5916,7 +5919,7 @@ na-tray-applet {
 }
 
 .caja-desktop.view .entry:selected {
-  background-color: rgba(138, 180, 248, 0.24);
+  background-color: rgba(180, 180, 180, 0.24);
 }
 
 .caja-navigation-window statusbar {
@@ -5944,15 +5947,15 @@ na-tray-applet {
 }
 
 #caja-extra-view-widget button:not(:disabled):drop(active), #caja-extra-view-widget button:not(:disabled):hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 #caja-extra-view-widget button:not(:disabled):focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 #caja-extra-view-widget button:not(:disabled):active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 /*********
@@ -6028,15 +6031,15 @@ na-tray-applet {
 }
 
 .lock-dialog button:not(:disabled):drop(active), .lock-dialog button:not(:disabled):hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 .lock-dialog button:not(:disabled):focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 .lock-dialog button:not(:disabled):active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 /* multimedia OSD */
@@ -6490,15 +6493,15 @@ frame.raven-frame > border {
 }
 
 .raven .raven-background stackswitcher.linked > button:checked:drop(active), .raven .raven-background stackswitcher.linked > button:checked:hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 .raven .raven-background stackswitcher.linked > button:checked:focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 .raven .raven-background stackswitcher.linked > button:checked:active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 .raven .raven-background stackswitcher.linked > button:not(:first-child) {
@@ -6634,15 +6637,15 @@ calendar.raven-calendar:selected {
 }
 
 .drop-shadow button.text-button:not(:disabled):drop(active), .drop-shadow button.text-button:not(:disabled):hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 .drop-shadow button.text-button:not(:disabled):focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 .drop-shadow button.text-button:not(:disabled):active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 .drop-shadow .linked > button {
@@ -6689,15 +6692,15 @@ calendar.raven-calendar:selected {
 }
 
 .budgie-session-dialog .linked.horizontal > button:not(:disabled):drop(active), .budgie-session-dialog .linked.horizontal > button:not(:disabled):hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 .budgie-session-dialog .linked.horizontal > button:not(:disabled):focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 .budgie-session-dialog .linked.horizontal > button:not(:disabled):active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 .budgie-polkit-dialog .message {
@@ -6850,15 +6853,15 @@ XfdesktopIconView.view .rubberband {
 }
 
 #XfceNotifyWindow buttonbox button:not(:disabled):drop(active), #XfceNotifyWindow buttonbox button:not(:disabled):hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 #XfceNotifyWindow buttonbox button:not(:disabled):focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 #XfceNotifyWindow buttonbox button:not(:disabled):active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 #XfceNotifyWindow label#summary {
@@ -6965,15 +6968,15 @@ XfdesktopIconView.view .rubberband {
 }
 
 #buttonbox_frame button:not(:disabled):drop(active), #buttonbox_frame button:not(:disabled):hover {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 #buttonbox_frame button:not(:disabled):focus {
-  box-shadow: inset 0 0 0 9999px rgba(138, 180, 248, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(180, 180, 180, 0.12);
 }
 
 #buttonbox_frame button:not(:disabled):active {
-  background-image: radial-gradient(circle, rgba(138, 180, 248, 0.16) 10%, transparent 0%);
+  background-image: radial-gradient(circle, rgba(180, 180, 180, 0.16) 10%, transparent 0%);
 }
 
 /********
