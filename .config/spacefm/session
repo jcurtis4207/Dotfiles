@@ -9,7 +9,7 @@ show_thumbnail=1
 
 [Window]
 width=946
-height=1039
+height=1038
 maximized=0
 
 [Desktop]
@@ -52,27 +52,24 @@ move_template-b=1
 move_copy-b=1
 move_link-b=1
 move_as_root-b=1
+move_dlg_font-x=600
+move_dlg_font-y=321
+move_dlg_font-z=0
 move_dlg_confirm_create-b=1
 status_info-b=1
 main_new_window-key=110
 main_new_window-keymod=4
 main_terminal-s=alacritty
 main_terminal-key=65473
-main_save_tabs-b=1
+main_save_tabs-b=2
 main_exit-key=113
 main_exit-keymod=4
-panel1_show-s=////home/jacob////home/jacob/Downloads////mnt/ztuff/OLD////mnt/ztuff/OLD////media/2TB_HDD/New
-panel1_show-x=4
 panel1_show-key=49
 panel1_show-keymod=4
 panel1_show-b=1
-panel2_show-s=////home/jacob
-panel2_show-x=0
 panel2_show-key=50
 panel2_show-keymod=4
 panel2_show-b=2
-panel3_show-s=////home/jacob
-panel3_show-x=0
 panel3_show-key=51
 panel3_show-keymod=4
 panel3_show-b=2
