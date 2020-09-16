@@ -1,1 +1,27 @@
-/etc/fstab
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/nvme0n1p3
+UUID=a827da96-0473-4a72-b0c6-066e70accb91	/         	ext4      	rw,relatime	0 1
+
+# /dev/nvme0n1p2
+UUID=2d276f28-4c5e-492e-ba00-e0f139f65c4c	none      	swap      	defaults  	0 0
+
+#
+#
+# Network Drives
+#
+#
+//192.168.1.50/media /mnt/media cifs      uid=1000,gid=1000,credentials=/etc/cifs-credentials,noauto,x-systemd.automount,x-systemd.mount-timeout=30,_netdev 0 0
+//192.168.1.50/backups /mnt/backups cifs  uid=1000,gid=1000,credentials=/etc/cifs-credentials,noauto,x-systemd.automount,x-systemd.mount-timeout=30,_netdev 0 0
+//192.168.1.50/VMs /mnt/VMs cifs          uid=1000,gid=1000,credentials=/etc/cifs-credentials,noauto,x-systemd.automount,x-systemd.mount-timeout=30,_netdev 0 0
+//192.168.1.50/ztuff /mnt/ztuff cifs      uid=1000,gid=1000,credentials=/etc/cifs-credentials,noauto,x-systemd.automount,x-systemd.mount-timeout=30,_netdev 0 0
+#
+#
+# Internal Drives
+#
+#
+/dev/sda2   /media/2TB_HDD        ntfs-3g defaults,noauto,x-systemd.automount   0 0
+/dev/sdc4   /media/Windows_Boot   ntfs-3g defaults,noauto,x-systemd.automount   0 0
+/dev/sdd2   /media/6TB_HDD        ntfs-3g defaults,noauto,x-systemd.automount   0 0

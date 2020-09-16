@@ -10,3 +10,4 @@ function run {
 run picom -b
 run udiskie --tray
 run xbindkeys
+run discord --start-minimized
