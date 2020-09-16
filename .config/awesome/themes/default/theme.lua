@@ -11,7 +11,7 @@ local themes_path = "/home/jacob/.config/awesome/themes/"
 
 local theme = {}
 
-theme.font          = "Hack 11"
+theme.font          = "Cantarell 12"
 
 theme.bg_normal     = "#202020" 
 theme.bg_focus      = "#242424"
