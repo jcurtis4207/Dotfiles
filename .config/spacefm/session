@@ -8,7 +8,7 @@
 show_thumbnail=1
 
 [Window]
-width=946
+width=1902
 height=1038
 maximized=0
 
@@ -124,6 +124,8 @@ task_show_manager-x=200
 task_show_manager-b=2
 task_hide_manager-b=1
 task_pop_all-b=2
+task_pop_top-x=946
+task_pop_top-y=1038
 task_pop_top-b=2
 task_pop_above-b=2
 task_pop_stick-b=2
@@ -326,14 +328,14 @@ panel1_show_toolbox0-b=1
 panel1_show_devmon0-b=1
 panel1_show_book0-b=1
 panel1_show_sidebar0-b=2
-panel1_detcol_name0-y=1394
+panel1_detcol_name0-y=357
 panel1_detcol_name0-b=1
 panel1_detcol_size0-y=100
 panel1_detcol_size0-b=1
 panel1_detcol_type0-b=2
 panel1_detcol_perm0-b=2
 panel1_detcol_owner0-b=2
-panel1_detcol_date0-y=267
+panel1_detcol_date0-y=1304
 panel1_detcol_date0-b=1
 panel1_slider_positions0-s=0
 panel1_slider_positions0-x=140
@@ -463,7 +465,7 @@ panel1_detcol_size1-b=1
 panel1_detcol_type1-b=2
 panel1_detcol_perm1-b=2
 panel1_detcol_owner1-b=2
-panel1_detcol_date1-y=267
+panel1_detcol_date1-y=1304
 panel1_detcol_date1-b=2
 panel1_slider_positions1-s=0
 panel1_slider_positions1-x=140
