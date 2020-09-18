@@ -288,6 +288,10 @@ globalkeys = gears.table.join(
     awful.key({ modkey }, "k", function () awful.spawn("keepass") end,
               {description = "launch keepass", group = "launcher"}),
 
+    -- Discord
+    awful.key({ modkey }, "d", function () awful.spawn("discord") end,
+              {description = "launch discrod", group = "launcher"}),
+
     -- DMenu
     awful.key({ "Control" }, "space", function () awful.spawn("dmenu_run -h 24") end,
               {description = "launch dmenu", group = "launcher"})
