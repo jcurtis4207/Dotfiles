@@ -12,7 +12,7 @@ alias ps="ps aux" # all user processes, show user/owner, all processes not run b
 alias vi="vim"
 alias sudovim="sudo -E vim" # run vim as sudo with user settings and plugins
 alias mkdir="mkdir -p" # create parents as needed
-alias snip="scrot -s"
+alias snip="scrot -s /home/jacob/Pictures/%Y-%m-%d_%H:%M:%S_scrot.png" # select window, move to Pictures
 
 alias shutdown="sudo shutdown -h now"
 
