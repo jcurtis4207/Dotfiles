@@ -12,9 +12,10 @@ alias ps="ps aux" # all user processes, show user/owner, all processes not run b
 alias vi="vim"
 alias sudovim="sudo -E vim" # run vim as sudo with user settings and plugins
 alias mkdir="mkdir -p" # create parents as needed
-alias snip="scrot -s /home/jacob/Pictures/%Y-%m-%d_%H:%M:%S_scrot.png" # select window, move to Pictures
-
 alias shutdown="sudo shutdown -h now"
+
+alias snip="scrot -s /home/jacob/Pictures/%Y-%m-%d_%H:%M:%S_scrot.png" # select window, move to Pictures
+alias random="shuf -ezn 1 * | xargs -0 -n1 vlc" # play random video in current directory
 
 # Debian Package Management
 #alias update="sudo apt-get update"
