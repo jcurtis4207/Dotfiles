@@ -1,3 +1,6 @@
+distro=ARCH
+user=jacob
+
 # My Bash Aliases
 alias ..="cd .."
 alias ...="cd ../.."
@@ -14,24 +17,47 @@ alias sudovim="sudo -E vim" # run vim as sudo with user settings and plugins
 alias mkdir="mkdir -p" # create parents as needed
 alias shutdown="sudo shutdown -h now"
 
-alias snip="scrot -s /home/jacob/Pictures/%Y-%m-%d_%H:%M:%S_scrot.png" # select window, move to Pictures
+alias snip="scrot -s /home/$user/Pictures/%Y-%m-%d_%H:%M:%S_scrot.png" # select window, move to Pictures
 alias random="shuf -ezn 1 * | xargs -0 -n1 vlc" # play random video in current directory
 
-# Debian Package Management
-#alias update="sudo apt-get update"
-#alias upgrade="sudo apt-get dist-upgrade --yes --auto-remove"
-#alias install="sudo apt-get install -y"
-#alias remove="sudo apt-get remove --purge --yes --auto-remove"
-
-# Arch Package Management
-alias update="sudo pacman -Syu"
-alias install="sudo pacman -S"
-alias remove="sudo pacman -Rsn"
-alias autoremove="sudo pacman -Qtd"
-
 # alias for git bare repository
-alias dotfiles="/usr/bin/git --git-dir=/home/jacob/Git/Dotfiles --work-tree=/home/jacob"
-alias scripts="/usr/bin/git --git-dir=/home/jacob/Git/Scripts --work-tree=/home/jacob"
+alias dotfiles="/usr/bin/git --git-dir=/home/$user/Git/Dotfiles --work-tree=/home/$user"
+alias scripts="/usr/bin/git --git-dir=/home/$user/Git/Scripts --work-tree=/home/$user"
 
 # disposable alias for installing vundle
 # alias zzzzzzz="git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
+
+function update {
+    if [ $distro = ARCH ];then
+            sudo pacman -Syu
+    elif [ $distro = DEBIAN ];then
+            sudo apt-get update
+    else
+            echo "Distro Not Recognized"
+    fi
+}
+function upgrade {
+    if [ $distro = DEBIAN ];then
+            sudo apt-get dist-upgrade --yes --auto-remove
+    else
+            echo "Distro Not Recognized"
+    fi
+}
+function install {
+    if [ $distro = ARCH ];then
+            sudo pacman -S $@
+    elif [ $distro = DEBIAN ];then
+            sudo apt-get install -y $@
+    else
+            echo "Distro Not Recognized"
+    fi
+}
+function remove {
+    if [ $distro = ARCH ];then
+            sudo pacman -Rsn $@
+    elif [ $distro = DEBIAN ];then
+            sudo apt-get remove --purge --yes --auto-remove $@
+    else
+            echo "Distro Not Recognized"
+    fi
+}
