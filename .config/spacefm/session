@@ -8,7 +8,7 @@
 show_thumbnail=1
 
 [Window]
-width=1906
+width=949
 height=1042
 maximized=0
 
@@ -337,7 +337,7 @@ panel1_show_toolbox0-b=1
 panel1_show_devmon0-b=2
 panel1_show_book0-b=1
 panel1_show_sidebar0-b=2
-panel1_detcol_name0-y=433
+panel1_detcol_name0-y=653
 panel1_detcol_name0-b=1
 panel1_detcol_size0-y=100
 panel1_detcol_size0-b=1
