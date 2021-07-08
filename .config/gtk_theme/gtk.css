@@ -2588,13 +2588,12 @@ radiobutton.text-button label:not(:only-child) {
 
 check,
 radio {
-  min-height: 24px;
-  min-width: 24px;
-  margin: -8px;
-  padding: 8px;
+  min-height: 14px;
+  min-width: 14px;
   border-radius: 9999px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6); 
   box-shadow: inset 0 0 0 9999px transparent;
+  background: #303030;
 }
 
 check:drop(active), check:hover,
@@ -2618,6 +2617,10 @@ radio:checked,
 radio:indeterminate {
   color: #AAAAAA;
   box-shadow: inset 0 0 0 9999px transparent;
+  background: #AAAAAA;
+  min-height: 8px;
+  min-width: 8px;
+  border: solid 4px #303030;
 }
 
 check:checked:drop(active), check:checked:hover, check:indeterminate:drop(active), check:indeterminate:hover,
@@ -7104,3 +7107,4 @@ read if you used those and something break with a version upgrade you're on your
 FIXME this is really an API */
 @define-color content_view_bg #101010;
 @define-color placeholder_text_color #a7a7a7;
+
