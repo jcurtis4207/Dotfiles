@@ -1,15 +1,17 @@
----------------------------
--- Default awesome theme --
----------------------------
+------------------------------------
+-- Modified default awesome theme --
+------------------------------------
 
 local theme_assets = require("beautiful.theme_assets")
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
-
+local gears = require("gears")
 local gfs = require("gears.filesystem")
 local themes_path = "/home/jacob/.config/awesome/themes/"
 
 local theme = {}
+
+theme.wallpaper = themes_path.."default/pacwall.png"
 
 theme.font          = "Cantarell 12"
 
@@ -29,6 +31,12 @@ theme.border_width  = dpi(1)
 theme.border_normal = "#000000"
 theme.border_focus  = "#535d6c"
 theme.border_marked = "#91231c"
+
+-- Hotkey popup mod keys text color
+theme.hotkeys_modifiers_fg = "#aaaaaa"
+
+-- Spacing between systray icons
+theme.systray_icon_spacing = 5
 
 -- There are other variable sets
 -- overriding the default one when
@@ -89,15 +97,10 @@ theme.titlebar_sticky_button_focus_active  = themes_path.."default/titlebar/stic
 
 theme.titlebar_floating_button_normal_inactive = themes_path.."default/titlebar/floating_normal_inactive.png"
 theme.titlebar_floating_button_focus_inactive  = themes_path.."default/titlebar/floating_focus_inactive.png"
-theme.titlebar_floating_button_normal_active = themes_path.."default/titlebar/floating_normal_active.png"
 theme.titlebar_floating_button_focus_active  = themes_path.."default/titlebar/floating_focus_active.png"
 
-theme.titlebar_maximized_button_normal_inactive = themes_path.."default/titlebar/maximized_normal_inactive.png"
-theme.titlebar_maximized_button_focus_inactive  = themes_path.."default/titlebar/maximized_focus_inactive.png"
 theme.titlebar_maximized_button_normal_active = themes_path.."default/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/maximized_focus_active.png"
-
-theme.wallpaper = themes_path.."default/arch.jpg"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"
@@ -127,5 +130,3 @@ theme.awesome_icon = theme_assets.awesome_icon(
 theme.icon_theme = nil
 
 return theme
-
--- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80
