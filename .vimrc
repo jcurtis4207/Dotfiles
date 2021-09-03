@@ -6,7 +6,7 @@ xnoremap <Leader>b :call Tabular()<CR>
 " End of line
 nnoremap <Leader>e $
 " Display vimrc bindings
-nnoremap <Leader>k :! less ~/.vimrc<CR>
+nnoremap <Leader>kk :! less ~/.vimrc<CR>
 " Open file in new split
 nnoremap <Leader>o :vs 
 " Save and exit
@@ -22,6 +22,11 @@ nnoremap <Leader>vs :VsplitVifm<CR>
 nnoremap <Leader>w :w<CR>
 " Better Escape
 inoremap jf <Esc>
+" Move lines
+vnoremap <leader>j :m '>+1<CR>gv=gv
+vnoremap <leader>k :m '<-2<CR>gv=gv
+nnoremap <leader>j :m .+1<CR>==
+nnoremap <leader>k :m .-2<CR>==
 " Control + hjkl in Insert Mode
 inoremap <C-k> <up>
 inoremap <C-j> <down>
@@ -50,7 +55,8 @@ set smartindent
 set autoindent
 
 syntax enable   " syntax highlighting
-set number      " line numbers
+"set number      " line numbers
+set number relativenumber " relative numbers
 set scrolloff=8 " scroll offset
 set incsearch   " search as you type
 set nowrap      " default wrapping off
@@ -106,4 +112,3 @@ function Tabular() range
      let c = getchar()
      execute ':Tabularize /' . nr2char(c)
 endfunction
-

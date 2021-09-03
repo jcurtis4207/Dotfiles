@@ -1,0 +1,7 @@
+[user]
+	name = Jacob Curtis
+	email = jcurtis4207@gmail.com
+[core]
+    editor = vim
+[commit]
+    template = /home/jacob/.gitcommit.txt
