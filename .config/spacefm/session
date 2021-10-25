@@ -8,7 +8,7 @@
 show_thumbnail=1
 
 [Window]
-width=1906
+width=949
 height=1042
 maximized=0
 
@@ -91,13 +91,13 @@ task_col_status-y=130
 task_col_status-b=1
 task_col_count-x=1
 task_col_path-x=2
-task_col_path-y=80
+task_col_path-y=125
 task_col_path-b=1
 task_col_file-x=3
-task_col_file-y=80
+task_col_file-y=158
 task_col_file-b=1
 task_col_to-x=4
-task_col_to-y=80
+task_col_to-y=58
 task_col_to-b=1
 task_col_progress-x=5
 task_col_progress-y=100
@@ -337,7 +337,7 @@ panel1_show_toolbox0-b=1
 panel1_show_devmon0-b=2
 panel1_show_book0-b=1
 panel1_show_sidebar0-b=2
-panel1_detcol_name0-y=433
+panel1_detcol_name0-y=552
 panel1_detcol_name0-b=1
 panel1_detcol_size0-y=100
 panel1_detcol_size0-b=1

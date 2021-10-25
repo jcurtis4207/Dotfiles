@@ -7,7 +7,7 @@
         "instagram":
         {
             "cookies":{
-                "sessionid":"1478676314%3Az5joxutIgvnBod%3A29"
+                "sessionid":"1478676314%3AQTmCN7r9QkVY78%3A22"
             },
             "highlights": true,
             "videos": true
@@ -26,8 +26,8 @@
             "adjust-extensions": true,
             "mtime": true,
             "rate": null,
-            "retries": 4,
-            "timeout": 30.0,
+            "retries": 9,
+            "timeout": 60.0,
             "verify": true
         },
 
@@ -38,8 +38,8 @@
             "mtime": true,
             "outtmpl": null,
             "rate": null,
-            "retries": 4,
-            "timeout": 30.0,
+            "retries": 9,
+            "timeout": 60.0,
             "verify": true
         }
     },
