@@ -32,7 +32,9 @@ function update {
 }
 function upgrade {
     if [ $distro = ARCH ];then
-            sudo pacman -Syu; echo "paru -Sua for AUR packages"
+            sudo pacman -Syu
+            pip freeze --user | cut -d'=' -f1 | xargs -n1 pip install -U
+            echo "paru -Sua for AUR packages"
     elif [ $distro = DEBIAN ];then
             sudo apt-get dist-upgrade --yes --auto-remove
     else
