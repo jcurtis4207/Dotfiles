@@ -15,6 +15,7 @@ alias mkdir="mkdir -p" # create parents as needed
 alias sudovim="sudo -E vim" # run vim as sudo with user settings and plugins
 alias shutdown="sudo shutdown -h now"
 alias snip="scrot -s /home/$user/Pictures/%Y-%m-%d_%H:%M:%S_scrot.png" # select window, move to Pictures
+alias rename="perl-rename"
 
 # git bare repositories
 alias dotfiles="/usr/bin/git --git-dir=/home/$user/Git/Dotfiles --work-tree=/home/$user"
