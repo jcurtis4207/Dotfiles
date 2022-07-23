@@ -13,9 +13,10 @@ alias ps="ps aux" # all user processes, show user/owner, all processes not run b
 alias du="du -h -d 1" # human readable and 1 directory deep
 alias mkdir="mkdir -p" # create parents as needed
 alias sudovim="sudo -E vim" # run vim as sudo with user settings and plugins
-alias shutdown="sudo shutdown -h now"
+alias shutdown="/sbin/shutdown -h now"
 alias snip="scrot -s /home/$user/Pictures/%Y-%m-%d_%H:%M:%S_scrot.png" # select window, move to Pictures
 alias rename="perl-rename"
+alias rename-space="perl-rename 's/_/ /g' ./*"
 
 # git bare repositories
 alias dotfiles="/usr/bin/git --git-dir=/home/$user/Git/Dotfiles --work-tree=/home/$user"
@@ -34,7 +35,6 @@ function update {
 function upgrade {
     if [ $distro = ARCH ];then
             sudo pacman -Syu
-            pip freeze --user | cut -d'=' -f1 | xargs -n1 pip install -U
             echo "paru -Sua for AUR packages"
     elif [ $distro = DEBIAN ];then
             sudo apt-get dist-upgrade --yes --auto-remove
