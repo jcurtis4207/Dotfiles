@@ -110,8 +110,8 @@ bindings.keyboard = {
 		awful.key({ "Mod1", "Control" }, "p", function () awful.spawn("firefox -private-window") end,
 				  {description = "launch firefox private", group = "launcher"}),
 
-		-- Keepass
-		awful.key({ modkey }, "k", function () awful.spawn("keepass") end,
+		-- Bitwarden
+		awful.key({ modkey }, "k", function () awful.spawn("bitwarden-desktop") end,
 				  {description = "launch keepass", group = "launcher"}),
 
 		-- Discord

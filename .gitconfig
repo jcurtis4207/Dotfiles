@@ -5,3 +5,6 @@
     editor = vim
 [commit]
     template = /home/jacob/.gitcommit.txt
+[safe]
+	directory = /media/6TB_HDD/6502/6502Asm
+	directory = /media/6TB_HDD/6502
