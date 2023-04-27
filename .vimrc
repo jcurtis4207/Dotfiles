@@ -9,8 +9,8 @@ nnoremap <Leader>e $
 nnoremap <Leader>kk :! less ~/.vimrc<CR>
 " Open file in new split
 nnoremap <Leader>o :vs 
-" Save and exit
-nnoremap <Leader>q :wq<CR>
+" Exit
+nnoremap <Leader>q :q<CR>
 " Toggle line wrapping
 nnoremap <Leader>t :call ToggleWrap()<CR>
 " Open vifm and open in split
@@ -40,6 +40,8 @@ inoremap <Down> <nop>
 inoremap <Left> <nop>
 inoremap <Right> <nop>
 
+" Set terminal window to 12 rows
+set termwinsize=12x0
 " Save and run Shellcheck in terminal split
 nnoremap <Leader>sc :call RunShellcheck()<CR>
 function! RunShellcheck()
