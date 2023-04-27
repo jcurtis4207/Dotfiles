@@ -11,8 +11,6 @@ nnoremap <Leader>kk :! less ~/.vimrc<CR>
 nnoremap <Leader>o :vs 
 " Save and exit
 nnoremap <Leader>q :wq<CR>
-" Run shellcheck on current file
-map <Leader>s :!clear && shellcheck %<CR>
 " Toggle line wrapping
 nnoremap <Leader>t :call ToggleWrap()<CR>
 " Open vifm and open in split
@@ -23,10 +21,10 @@ nnoremap <Leader>w :w<CR>
 " Better Escape
 inoremap jf <Esc>
 " Move lines
-vnoremap <leader>j :m '>+1<CR>gv=gv
-vnoremap <leader>k :m '<-2<CR>gv=gv
-nnoremap <leader>j :m .+1<CR>==
-nnoremap <leader>k :m .-2<CR>==
+vnoremap <Leader>j :m '>+1<CR>gv=gv
+vnoremap <Leader>k :m '<-2<CR>gv=gv
+nnoremap <Leader>j :m .+1<CR>==
+nnoremap <Leader>k :m .-2<CR>==
 " Control + hjkl in Insert Mode
 inoremap <C-k> <up>
 inoremap <C-j> <down>
@@ -41,6 +39,19 @@ inoremap <Up> <nop>
 inoremap <Down> <nop>
 inoremap <Left> <nop>
 inoremap <Right> <nop>
+
+" Save and run Shellcheck in terminal split
+nnoremap <Leader>sc :call RunShellcheck()<CR>
+function! RunShellcheck()
+    :w
+    " Close bottom split if its open
+    if tabpagewinnr(tabpagenr(), '$') > 1
+        :wincmd b
+        :q
+    endif
+    :terminal shellcheck %
+    :wincmd k
+endfunc
 
 " gcc comments a line
 " space+c comments a paragraph or highlighted section
@@ -112,3 +123,4 @@ function Tabular() range
      let c = getchar()
      execute ':Tabularize /' . nr2char(c)
 endfunction
+
